@@ -25,7 +25,7 @@ DESDIR=sauvegarde/
 
 
 #tar -zcvf $DESDIR/$FILENAME . 
-Users/gduplessi/Desktop/script_bash -f sauvegarde
+
 
 # Print end status message.
 
