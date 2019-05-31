@@ -36,10 +36,17 @@
 | pause     | laisse ouverte la fenetre
 
 
-#fichier log : 
+# fichier log : 
 
 ```
 Fichier enregistre = 14:34:55,35 ==== 	31/05/2019  ======= nom_pc ======= Geoffrey
+
+```
+
+# fichier delete : 
+
+```
+en cours de modification
 
 ```
 # New Features!
@@ -51,7 +58,10 @@ Fichier enregistre = 14:34:55,35 ==== 	31/05/2019  ======= nom_pc ======= Geoffr
 
 # liens :
 
-[xcopy_explication](https://ss64.com/nt/xcopy.html)
-[log.txt](https://www.computerhope.com/issues/ch001679.htm)
-[move_files](https://www.computerhope.com/movehlp.htm)
+- [xcopy_explication](https://ss64.com/nt/xcopy.html)
+- [log.txt](https://www.computerhope.com/issues/ch001679.htm)
+- [move_files](https://www.computerhope.com/movehlp.htm)
 
+## update readme : 
+
+- 31/05/2019 
