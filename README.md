@@ -20,7 +20,7 @@
 
 <tt>backup.bat</tt>
 |                	|description                         														|
-|-------------------|-------------------------------------------------------------------------------------------|
+|-------------------|:-----------------------------------------------------------------------------------------:|
 |@echo off	 		|permet de cacher toutes les lignes de commandes qui sont effectuées lors de l'execution	|
 |color A0        	|affiche de la couleur dans la console          											|
 |cls	         	|"nettoyer" la console(supprime tout ce qui est ecrit)										|
