@@ -1,7 +1,11 @@
+#!/bin/bash
+
+
+
 #Vérifie si le fichier existe ou non.
 [ -f "C:/Users/geoffrey/Desktop/script_bash/sauvegarde.bash" ] && echo -e "\e[95mLe fichier existe" || echo -e "\e[31mLe fichier n'existe pas"
 
-[ -f "D:/Github/script_bash/backup.bash" ] && echo -e "\e[95mLe fichier existe" || echo -e "\e[31mLe fichier n'existe pas"
+#[ -f "D:/Github/script_bash/backup.bash" ] && echo -e "\e[95mLe fichier existe" || echo -e "\e[31mLe fichier n'existe pas"
 
 
 echo -e "${Cyan}--------------------------------------------------------------------------------${NC}"
@@ -10,8 +14,7 @@ echo -e "${Cyan}----------------------------------------------------------------
 
 
   date=$(date +"_%y-%m-%d")
-  #backup_path="/Users/geoffrey/Desktop/script_bash/"
-  backup_path="D:/Github/script_bash"
+  backup_path="/Users/geoffrey/Desktop/script_bash/"
 
   res1=$(date +%s.%N)
   
@@ -37,8 +40,8 @@ echo -e "${Cyan}----------------------------------------------------------------
 
 BACKUPTIME=`date +%d-%m-%y` 
 DESTINATION=sauvegarde/backup-$BACKUPTIME.tgz
-#SOURCEFOLDER=/Users/gduplessi/Desktop/script_bash/ 
-  SOURCEFOLDER=D:/Github/script_bash/ 
+SOURCEFOLDER=/Users/gduplessi/Desktop/script_bash/ 
+#SOURCEFOLDER=D:/Github/script_bash/ 
 tar -zcvf $DESTINATION $SOURCEFOLDER .
 
 #get the current date
