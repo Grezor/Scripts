@@ -6,28 +6,56 @@ If exist "C:\Users\gduplessi\Desktop\script_bash\" (
     echo le REPERTOIRE existe  
 
 
-rem ----------- COPIER UN REPERTOIRE VERS UNE DESTINATION ----------------------
+rem ----------- COPIER UN REPERTOIRE  -------------------------------------------
 rem copie le repertoire : source destination 
 rem xcopy C:\Users\gduplessi\Desktop\script_bash C:\Users\gduplessi\Desktop\script_bash\sauvegarde 
 rem COPIE DES FICHIERS EN COURS
+rem -------------------------	FIN XCOPIE -------------------------------------------
 
 
 
 
 rem --------------- ZIPER UN REPERTOIRE VERS UNE DESTINATION ------------------------------------------
-for /f "tokens=3,2,4 delims=/- " %%x in ("%date%") do set d=%%y%%x%%z
-set data=%d%
-GOTO 
-Echo FICHIER EN COURS DE COMPRESSIONS
-GOTO 
-"C:\Program Files\7-Zip\7z.exe" a -tzip "C:\Users\gduplessi\Desktop\script_bash\sauvegarde\sauvegarde%d%.zip" "C:\Users\gduplessi\Desktop\script_bash\"
+rem for /f "tokens=3,2,4 delims=/- " %%x in ("%date%") do set d=%%y%%x%%z
+rem set data=%d%
+rem GOTO 
+rem Echo FICHIER EN COURS DE COMPRESSIONS
+rem GOTO 
+rem "C:\Program Files\7-Zip\7z.exe" a -tzip "C:\Users\gduplessi\Desktop\script_bash\sauvegarde\sauvegarde%d%.zip" "C:\Users\gduplessi\Desktop\script_bash\"
 rem -------------------------	FIN ZIP -------------------------------------------
 
+rem ----- enregistre l'heure / date / nom du pc dans le fichier log
+rem echo Fichier enregistre = %time% ==== 	%date%  ======= %COMPUTERNAME% ======= %USERNAME%>> log.txt
+
+rem echo LA SAUVEGARDE A BIEN ETAIS ENREGISTRE
+
+
+del * /A:H
+echo Fichier supprimer = %time% ==== 	%date%  ======= %COMPUTERNAME% ======= %USERNAME%>> delete_file.txt
+pause 
+
+rem --------------- SUPPRIMER FICHIER  ------------------------------------------
+: SET MYFILE="C:\Users\gduplessi\Desktop\script_bash\sauvegarde\sauvegarde%d%.zip"
+: IF EXIST %MYFILE% DEL /F %MYFILE%
+
+: rem supprimme le fichier au bout après x jours 
+: forfiles -p "C:\Users\gduplessi\Desktop\script_bash\" -s -m *.* -d <number of days> -c "cmd /c del @path"
+
+: set chemin= »D:\Desktop\sauvegarde »
+: set jours=1
+
+
+: rem supprime et affiche les dossiers qui ont été supprimé
+
+: ForFiles /P %chemin% /D -%jours% /C « CMD /C if @ISDIR==TRUE echo @FILE &RD /Q /S 
+: @FILE »
+rem --------------- / SUPPRIMER FICHIER  ------------------------------------------
 
 
 
 
-echo LA SAUVEGARDE A BIEN ETAIS ENREGISTRER
+
+
 rem Verification si la personne a internet
 rem pause > null
 rem echo checking internet connection

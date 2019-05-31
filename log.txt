@@ -1,0 +1,4 @@
+Logged time = 14:23:16,26 31/05/2019 FDG-PC416 
+FICHIER SAUVEGARDE = 14:27:00,14 		; 			31/05/2019  	;		FDG-PC416 
+Fichier enregistre = 14:34:55,35 ==== 	31/05/2019  ======= FDG-PC416 ======= gduplessi
+Fichier enregistre = 15:57:31,28 ==== 	31/05/2019  ======= FDG-PC416 ======= gduplessi
