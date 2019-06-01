@@ -1,9 +1,23 @@
 @echo off
-
 rem cls permet d'effacer l'affichage 
-If exist "C:\Users\gduplessi\Desktop\script_bash\" (
+
+If exist "D:\Github\Scrip" (
     color 0a
-    echo le REPERTOIRE existe  
+    echo [32mle REPERTOIRE existe[0m  
+   ) else (
+    color 0c
+    echo [31mERREUR REPERTOIRE[0m
+    echo Veuillez prevenir le service informatique
+  	pause 
+  	
+)
+
+echo 
+pause
+If exist "C:\Users\gduplessi\Desktop\script_\" (
+    color 0a
+    echo ^<ESC^>[32m [32mle REPERTOIRE existe[0ms  
+
 
 
 rem ----------- COPIER UN REPERTOIRE  -------------------------------------------
@@ -30,8 +44,7 @@ rem echo Fichier enregistre = %time% ==== 	%date%  ======= %COMPUTERNAME% ======
 rem echo LA SAUVEGARDE A BIEN ETAIS ENREGISTRE
 
 
-del * /A:H
-echo Fichier supprimer = %time% ==== 	%date%  ======= %COMPUTERNAME% ======= %USERNAME%>> delete_file.txt
+
 pause 
 
 rem --------------- SUPPRIMER FICHIER  ------------------------------------------
@@ -70,7 +83,7 @@ pause
     echo ERREUR REPERTOIRE
     echo Veuillez prevenir le service informatique
   	pause 
-  	exit
+  	
 )
 
 pause
