@@ -61,34 +61,8 @@ en cours de modification
 
 
 # dir : <option> :
-	Commutateurs ou options
+	
 
-/P, /W, /A, /O, /S, /B, /L, /C[H]
-
-    /P : Marque une pause à chaque écran lors de l'affichage de la liste des fichiers et dossiers.
-    /W : Affiche de manière condensée la liste des fichiers et répertoires sur plusieurs colonnes.
-    /A[:]attributs : Affiche les fichiers titulaires des attributs spécifiés.
-        D Répertoires
-        R Fichiers lecture seule
-        H Fichiers cachés
-        S Fichiers système
-        A Fichiers prêt à archiver
-        - Préfixe signifiant "non"
-    /O : Affiche les fichiers dans l'ordre spécifié.
-        N Nom (alphabétique)
-        S Taille (croissante)
-        E Extension (alphabétique)
-        D Date et heure (chronologique)
-        G Répertoires en tête
-        - Préfixe pour l'ordre inverse
-        C Par taux de compression (par ordre croissant)
-    /S : Affiche le catalogue du répertoire courant et de tout les sous répertoires de celui-ci.
-    /B Affiche les noms de fichier seuls.
-    /L Affiche le catalogue en minuscules.
-    /C[H] : Affiche le taux de compression du fichier;
-        /CH Utilise pour l'affichage la taille l'unité d'allocation de l'hôte.
-
-Note : Les différentes options peuvent être combinées. 
 
 # liens :
 

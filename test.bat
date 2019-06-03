@@ -40,10 +40,20 @@ rem ----------- FIN ZIP -------------------------------------------
 rem ----------- AFFICHE LISTE DES FICHIERS CREATE / DELETE  -------------------------------------------
 
 rem dir /b /a-d C:\Users\gduplessi\Desktop\Scripts\
+echo ====================================================
+echo Fichier modifier
+echo ====================================================
+
+rem FC diff.txt diff2.txt
+rem ROBOCOPY %sourceDir% %targetDir%\ *.* /xo 
+
+copy C:\Users\gduplessi\Desktop\Scripts C:\Users\gduplessi\Desktop\Scripts\sauvegarde
 
 
 
 
+
+pause
 
 rem -----------  / affichage -------------------------------------------
 
