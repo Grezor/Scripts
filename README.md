@@ -8,7 +8,6 @@
 ## Présentation :
 
 
-## A quoi sa sert ? :
 
 ## Technologie : 
 	
@@ -28,30 +27,25 @@
 - changer votre repertoire : ```"C:\Users\repertoire\Desktop\Scripts\" ```
 
 
-| 		   	|      description     																						|
-|----------	|:---------------------------------------------------------------------------------------------------------:|
-| exit	   	| quitter automatiquement 	   																				|
-| rem      	| commentaire         																						| 
-| xcopy    	| Copiez les fichiers et / ou les répertoires dans un autre dossier											|
-| cls	   	| "nettoyer" la console(supprime tout ce qui est ecrit)       												|
-| color A0  | affiche de la couleur dans la console        																| 
-| @echo off	| permet de cacher toutes les lignes de commandes qui sont effectuées lors de l'execution				    |
-| pause     | laisse ouverte la fenetre
+| 	repertoire   	|      description    																		|	
+|----------			|-------------------------------------------------------------------						|
+| `exit`	   		| quitter automatiquement 																	|	
+| `rem`     		| commentaire  																				| 
+| `xcopy`   		| Copiez les fichiers et / ou les répertoires dans un autre dossier							|
+| `cls`	   			| "nettoyer" la console(supprime tout ce qui est ecrit) 									|
+| `color A0`  		| affiche de la couleur dans la console        												| 
+| `@echo off`		| permet de cacher toutes les lignes de commandes qui sont effectuées lors de l'execution	|
+| `pause`     		| laisse ouverte la fenetre																	|
 
 
-# fichier log : 
+# fichier rapport : 
 
-```
+```/* fichier save.txt */
+
 Fichier enregistre = 14:34:55,35 ==== 	31/05/2019  ======= nom_pc ======= Geoffrey
 
 ```
 
-# fichier delete : 
-
-```
-en cours de modification
-
-```
 # New Features!
 
 	- zip 
@@ -60,8 +54,8 @@ en cours de modification
 	- remplacer fichier si modifier
 
 
-# dir : <option> :
-	
+# Colors :
+
 
 
 # liens :
@@ -72,4 +66,4 @@ en cours de modification
 
 ## update readme : 
 
-- 31/05/2019 
+- 03/06/2019 

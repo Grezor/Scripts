@@ -1,12 +1,13 @@
 @echo off
 rem cls permet d'effacer l'affichage 
-If exist "C:\Users\gduplessi\Desktop\Scripts\" (
+
+If exist "D:\Github\Scripts" (
     color 0a
     echo le REPERTOIRE existe  
 
 rem ----------- COPIER UN REPERTOIRE  -------------------------------------------
 : copie le repertoire : source destination 
-xcopy C:\Users\gduplessi\Desktop\C:\Users\gduplessi\Desktop\Scripts C:\Users\gduplessi\Desktop\C:\Users\gduplessi\Desktop\Scripts\sauvegarde 
+xcopy D:\Github\Scripts D:\Github\Scripts\sauvegarde 
 echo  COPIE DES FICHIERS EN COURS
 rem -------------------------	FIN XCOPIE -------------------------------------------
 pause
