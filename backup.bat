@@ -1,51 +1,34 @@
 @echo off
 rem cls permet d'effacer l'affichage 
-
-If exist "D:\Github\Scrip" (
+If exist "C:\Users\gduplessi\Desktop\script_bash\" (
     color 0a
-    echo [32mle REPERTOIRE existe[0m  
-   ) else (
-    color 0c
-    echo [31mERREUR REPERTOIRE[0m
-    echo Veuillez prevenir le service informatique
-  	pause 
-  	
-)
-
-echo 
-pause
-If exist "C:\Users\gduplessi\Desktop\script_\" (
-    color 0a
-    echo ^<ESC^>[32m [32mle REPERTOIRE existe[0ms  
-
+    echo le REPERTOIRE existe  
 
 
 rem ----------- COPIER UN REPERTOIRE  -------------------------------------------
-rem copie le repertoire : source destination 
-rem xcopy C:\Users\gduplessi\Desktop\script_bash C:\Users\gduplessi\Desktop\script_bash\sauvegarde 
-rem COPIE DES FICHIERS EN COURS
+: copie le repertoire : source destination 
+: xcopy C:\Users\gduplessi\Desktop\script_bash C:\Users\gduplessi\Desktop\script_bash\sauvegarde 
+: echo COPIE DES FICHIERS EN COURS
 rem -------------------------	FIN XCOPIE -------------------------------------------
 
 
 
+: --------------- ZIPER UN REPERTOIRE VERS UNE DESTINATION ------------------------------------------
+rem 	for /f "tokens=3,2,4 delims=/- " %%x in ("%date%") do set d=%%y%%x%%z
+rem 	set data=%d%
+rem 	GOTO 
+rem  	Echo FICHIER EN COURS DE COMPRESSIONS
+rem  	GOTO 
+rem  	"C:\Program Files\7-Zip\7z.exe" a -tzip "C:\Users\gduplessi\Desktop\script_bash\sauvegarde\sauvegarde%d%.zip" "C:\Users\gduplessi\Desktop\script_bash\"
+rem : -------------------------	FIN ZIP -------------------------------------------
 
-rem --------------- ZIPER UN REPERTOIRE VERS UNE DESTINATION ------------------------------------------
-rem for /f "tokens=3,2,4 delims=/- " %%x in ("%date%") do set d=%%y%%x%%z
-rem set data=%d%
-rem GOTO 
-rem Echo FICHIER EN COURS DE COMPRESSIONS
-rem GOTO 
-rem "C:\Program Files\7-Zip\7z.exe" a -tzip "C:\Users\gduplessi\Desktop\script_bash\sauvegarde\sauvegarde%d%.zip" "C:\Users\gduplessi\Desktop\script_bash\"
-rem -------------------------	FIN ZIP -------------------------------------------
-
-rem ----- enregistre l'heure / date / nom du pc dans le fichier log
+rem : ----- enregistre l'heure / date / nom du pc dans le fichier log
 rem echo Fichier enregistre = %time% ==== 	%date%  ======= %COMPUTERNAME% ======= %USERNAME%>> log.txt
 
 rem echo LA SAUVEGARDE A BIEN ETAIS ENREGISTRE
 
+echo lol
 
-
-pause 
 
 rem --------------- SUPPRIMER FICHIER  ------------------------------------------
 : SET MYFILE="C:\Users\gduplessi\Desktop\script_bash\sauvegarde\sauvegarde%d%.zip"
@@ -75,8 +58,8 @@ rem echo checking internet connection
 rem Ping www.google.nl -n 1 -w 1000
 rem if errorlevel 1 (set internet=Not connected to internet)
 rem if errorlevel 0 (set internet=Connected to internet)
+pause 
 
-pause
 
 ) else (
     color 0c
@@ -86,4 +69,3 @@ pause
   	
 )
 
-pause
