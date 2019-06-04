@@ -53,18 +53,18 @@ Fichier enregistre = 14:34:55,35 ==== 	31/05/2019  ======= nom_pc ======= Geoffr
 
 - [ ] zip
 - [x] copier
-- [ ] supprimer {en attente}
-- [ ]remplacer fichier si modifier
+- [ ] supprimer (en attente)
+- [ ] remplacer fichier si modifier (en attente)
 
 
 # liens :
 
 - [xcopy_explication](https://ss64.com/nt/xcopy.html)
-
+- [dir_explication](https://docs.microsoft.com/fr-fr/windows-server/administration/windows-commands/dir)
 - [log.txt](https://www.computerhope.com/issues/ch001679.htm)
 - [move_files](https://www.computerhope.com/movehlp.htm)
 
-- - - - 
+
 ## update readme : 
 
 - 31/05/2019 

@@ -45,11 +45,16 @@ echo Fichier modifier
 echo ====================================================
 
 rem FC diff.txt diff2.txt
-rem ROBOCOPY %sourceDir% %targetDir%\ *.* /xo 
-
-xcopy C:\Users\gduplessi\Desktop\Scripts C:\Users\gduplessi\Desktop\Scripts\sauvegarde /r /Y /I /v /D /q /f
 
 
+ xcopy /e "C:\Users\gduplessi\Desktop\Scripts\*.*" C:\Users\gduplessi\Desktop\Scripts\sauvegarde\
+
+
+
+ rem robocopy C:\Users\gduplessi\Desktop\Scripts C:\Users\gduplessi\Desktop\Scripts\sauvegarde /E /S /XO
+
+
+REM /r /Y /I /v /D /q /f /E
 
 pause
 
@@ -57,7 +62,16 @@ rem -----------  / affichage -------------------------------------------
 
 
 
-rem ----------- AFFICHE la differences si in fichier a etais modifier  -------------------------------------------
+rem ----------- AFFICHE les fichiers sur le serveur  ----------------
+echo ====================================================
+echo Fichier sauvegarder sur le serveur
+echo ====================================================
+
+	dir /b /O C:\Users\gduplessi\Desktop\Scripts\sauvegarde
+
+echo ====================================================
+echo Fichier sauvegarder sur le serveur
+echo ====================================================
 
 
 rem ----------- / fin   -------------------------------------------
@@ -67,6 +81,8 @@ color 0c
 echo ce repertoire n existe pas
 
 )
+
+
 
 
 
