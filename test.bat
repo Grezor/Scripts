@@ -20,8 +20,9 @@ rem ----------- FIN COPIER UN REPERTOIRE  --------------------------------------
 
 
 
-rem ----------- ZIP  -------------------------------------------
-
+rem -------------------------------------------
+rem 				ZIP  
+rem -------------------------------------------
 rem  for /f "tokens=3,2,4 delims=/- " %%x in ("%date%") do set d=%%y%%x%%z
 rem  set data=%d%
 rem  GOTO 
@@ -35,7 +36,9 @@ rem echo ====================================================
 
 rem pause
 
-rem ----------- FIN ZIP -------------------------------------------
+rem ----------- FIN ZIP -----------------------------------------
+
+
 
 rem ----------- AFFICHE LISTE DES FICHIERS CREATE / DELETE  -------------------------------------------
 
@@ -45,20 +48,50 @@ echo Fichier modifier
 echo ====================================================
 
 rem FC diff.txt diff2.txt
-
-
- xcopy /e "C:\Users\gduplessi\Desktop\Scripts\*.*" C:\Users\gduplessi\Desktop\Scripts\sauvegarde\
-
-
-
- rem robocopy C:\Users\gduplessi\Desktop\Scripts C:\Users\gduplessi\Desktop\Scripts\sauvegarde /E /S /XO
-
-
 REM /r /Y /I /v /D /q /f /E
 
+
+
+rem attention, pour copier un repertoire, ne pas le mettre dans le meme repertoire que le .bat
+
+rem xcopy "C:\Users\gduplessi\Desktop\Scripts" "C:\Users\gduplessi\Documents\sauvegarde" /e /i /c /h /y
+
+
+
+
+
+rem >>>>>>>>>>>>>>> sauvegarde : 04/06/2019
+for /f "tokens=1-5 delims=/ " %%d in ("%date%") do echo Nous somme le %%d_%%e_%%f
+set tm=%time%
+set hh=!tm:~0,2!
+if !hh! lss 06 (
+echo less    
+) else (
+echo more
+)
 pause
 
-rem -----------  / affichage -------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -67,13 +100,14 @@ echo ====================================================
 echo Fichier sauvegarder sur le serveur
 echo ====================================================
 
-	dir /b /O C:\Users\gduplessi\Desktop\Scripts\sauvegarde
+	rem dir /b /O C:\Users\gduplessi\Desktop\Scripts\sauvegarde
+	dir /b /O C:\Users\gduplessi\Documents\sauvegarde
 
 echo ====================================================
-echo Fichier sauvegarder sur le serveur
+echo TERMINER
 echo ====================================================
 
-
+pause
 rem ----------- / fin   -------------------------------------------
 
 ) ELSE (

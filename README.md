@@ -28,7 +28,7 @@ Il suffit de lancer le fichier *backup.bat*
 
 <tt>backup.bat</tt>
 
-- changer votre repertoire : ```"C:\Users\repertoire\Desktop\Scripts\" ```
+- changer votre repertoire : ```C:\Users\repertoire\Desktop\Scripts\ ```
 
 
 | 		   	|      description     																						|
@@ -49,9 +49,28 @@ Fichier enregistre = 14:34:55,35 ==== 	31/05/2019  ======= nom_pc ======= Geoffr
 
 ```
 
+# comparaison :
+```
+    EQU : égal à
+    NEQ : différent de
+    LSS : inférieur à
+    LEQ : inférieur ou égal à
+    GTR : supérieur à
+    GEQ : supérieur ou égal à 
+```
+
+date :
+```
+- Chaîne de caractères 	2 	3 	: 	1 	5 	: 	0 	0
+- Position 				0 	1 	2 	3 	4 	5 	6 	7
+- explication : 
+    %time:~0,2% : Afficher 2 caractères à partir de la position 0
+    %time:~3,2% : Afficher 2 caractères à partir de la position 3
+    %time:~6,2% : Afficher 2 caractères à partir de la position 6
+```
 # New Features!
 
-- [ ] zip
+- [ ] zip si la date est a j-1
 - [x] copier
 - [ ] supprimer (en attente)
 - [ ] remplacer fichier si modifier (en attente)
@@ -60,6 +79,8 @@ Fichier enregistre = 14:34:55,35 ==== 	31/05/2019  ======= nom_pc ======= Geoffr
 # liens :
 
 - [xcopy_explication](https://ss64.com/nt/xcopy.html)
+- [xcopy_repertory](https://www.tutodidacte.com/bat-copier-un-dossier-avec-xcopy)
+- [developpez.com](https://windows.developpez.com/faq/batch/?page=fichiers#delete_empty_files)
 - [dir_explication](https://docs.microsoft.com/fr-fr/windows-server/administration/windows-commands/dir)
 - [log.txt](https://www.computerhope.com/issues/ch001679.htm)
 - [move_files](https://www.computerhope.com/movehlp.htm)
