@@ -11,7 +11,6 @@ Ce script fait une sauvegarde de certains dossiers de votre ordinateur de bureau
 Notez que ce script NE SYNCHRONISE PAS votre ordinateur local avec la machine distante, car il ne copie rien de la machine distante vers votre ordinateur. Il ne copie que les fichiers de votre ordinateur vers celui distant. En d'autres termes, ce script "sauvegarde" vos fichiers sur la machine distante.
 
 
-
 Il suffit de lancer le fichier *backup.bat*
 
 
@@ -21,9 +20,8 @@ Il suffit de lancer le fichier *backup.bat*
 	- .bat 
 
 ## Procedure d'execution .sh:
+J'ai également crée un script shell qui permet lui aussi de sauvegarder certain dossier de l'ordianteur.Il affiche différentes couleurs (erreur : rouge)
 ```./backup.sh ```
-
-## Description des fichiers :
 
 
 ## Qu'est-ce qu'un fichier batch ?
@@ -46,27 +44,15 @@ Il suffit de lancer le fichier *backup.bat*
 | dir		| affiche des informations sur les fichiers et les répertoires												|
 
 
-# fichier rapport : 
+## fichier rapport : 
 
-```/* fichier save.txt */
+```Fichier enregistre = 14:34:55,35 ==== 	31/05/2019  ======= nom_pc ======= Geoffrey```
 
-
-Fichier enregistre = 14:34:55,35 ==== 	31/05/2019  ======= nom_pc ======= Geoffrey
-
-```
-
-# New Features!
-
-	- zip 
-	- copier
-	- supprimer {en attente}
-	- remplacer fichier si modifier
+## Colors :
 
 
-# Colors :
 
-
-# comparaison :
+## comparaison :
 ```
     EQU : égal à
     NEQ : différent de
@@ -75,26 +61,22 @@ Fichier enregistre = 14:34:55,35 ==== 	31/05/2019  ======= nom_pc ======= Geoffr
     GTR : supérieur à
     GEQ : supérieur ou égal à 
 ```
-
-date :
-```
-- Chaîne de caractères 	2 	3 	: 	1 	5 	: 	0 	0
-- Position 				0 	1 	2 	3 	4 	5 	6 	7
-- explication : 
-    %time:~0,2% : Afficher 2 caractères à partir de la position 0
-    %time:~3,2% : Afficher 2 caractères à partir de la position 3
-    %time:~6,2% : Afficher 2 caractères à partir de la position 6
-```
-# New Features!
+## New Features!
 
 - [ ] zip si la date est a j-1
 - [x] copier
 - [ ] supprimer (en attente)
 - [ ] remplacer fichier si modifier (en attente)
 
+## améliorations :
+
+	- Ziper le dossier si j-1 de la sauvegarde.
+	- Si le fichier ou dossier existe, lors d'une deuxieme sauvegarde. Le dezipper le dossier, puis vérifier les fichiers et ensuite permettre
+		de zip de nouveau. 
+	- Crée plusieurs fichiers textes qui se remplice pour afficher la date de sauvegarde ..
 
 
-# liens :
+## liens :
 
 - [xcopy_explication](https://ss64.com/nt/xcopy.html)
 - [xcopy_repertory](https://www.tutodidacte.com/bat-copier-un-dossier-avec-xcopy)
@@ -106,4 +88,4 @@ date :
 
 ## update readme : 
 
-- 03/06/2019 
+- 05/06/2019 
