@@ -10,10 +10,6 @@ Ce script fait une sauvegarde de certains dossiers de votre ordinateur de bureau
 
 Notez que ce script NE SYNCHRONISE PAS votre ordinateur local avec la machine distante, car il ne copie rien de la machine distante vers votre ordinateur. Il ne copie que les fichiers de votre ordinateur vers celui distant. En d'autres termes, ce script "sauvegarde" vos fichiers sur la machine distante.
 
-
-Il suffit de lancer le fichier *backup.bat*
-
-
 ## Technologie : 
 	
 	- .bash
@@ -21,7 +17,11 @@ Il suffit de lancer le fichier *backup.bat*
 
 ## Procedure d'execution .sh:
 J'ai également crée un script shell qui permet lui aussi de sauvegarder certain dossier de l'ordianteur.Il affiche différentes couleurs (erreur : rouge)
-```./backup.sh ```
+```
+./backup.sh 
+! => il faut changer le repertoire de sauvegarde 
+
+```
 
 
 ## Qu'est-ce qu'un fichier batch ?
@@ -47,9 +47,6 @@ J'ai également crée un script shell qui permet lui aussi de sauvegarder certai
 ## fichier rapport : 
 
 ```Fichier enregistre = 14:34:55,35 ==== 	31/05/2019  ======= nom_pc ======= Geoffrey```
-
-## Colors :
-
 
 
 ## comparaison :
