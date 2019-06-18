@@ -5,7 +5,7 @@
 # <tt>#!/bin/bash</tt>
 
 
-## [#f03c15]Présentation :
+## ![#f03c15]Présentation :
 Ce script fait une sauvegarde de certains dossiers de votre ordinateur de bureau local, vers une machine distante. Par défaut, ce script ne copie que les nouveaux fichiers et les fichiers qui ont été modifiés. Si vous avez supprimé des fichiers sur votre ordinateur local, ils ne sont PAS supprimés sur la machine distante. 
 
 Notez que ce script NE SYNCHRONISE PAS votre ordinateur local avec la machine distante, car il ne copie rien de la machine distante vers votre ordinateur. Il ne copie que les fichiers de votre ordinateur vers celui distant. En d'autres termes, ce script "sauvegarde" vos fichiers sur la machine distante.
