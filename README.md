@@ -3,7 +3,7 @@
 </p>
 
 # <tt>#!/bin/bash</tt>
-[![Github Releases](https://img.shields.io/badge/mise a jour-05.06.2019-blue.svg)]()
+[![Github Releases](https://img.shields.io/badge/Update-05.06.2019-blue.svg)]()
 
 ## Présentation :
 Ce script fait une sauvegarde de certains dossiers de votre ordinateur de bureau local, vers une machine distante. Par défaut, ce script ne copie que les nouveaux fichiers et les fichiers qui ont été modifiés. Si vous avez supprimé des fichiers sur votre ordinateur local, ils ne sont PAS supprimés sur la machine distante. 
