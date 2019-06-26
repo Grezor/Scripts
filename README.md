@@ -3,7 +3,7 @@
 </p>
 
 # <tt>#!/bin/bash</tt>
-[![Github Releases](https://img.shields.io/badge/update-05.06.2019-blue.svg)]()
+[![Github Releases](https://img.shields.io/badge/mise_a_jour-05.06.2019-blue.svg)]()
 
 ## Présentation :
 Ce script fait une sauvegarde de certains dossiers de votre ordinateur de bureau local, vers une machine distante. Par défaut, ce script ne copie que les nouveaux fichiers et les fichiers qui ont été modifiés. Si vous avez supprimé des fichiers sur votre ordinateur local, ils ne sont PAS supprimés sur la machine distante. 
@@ -78,6 +78,3 @@ J'ai également crée un script shell qui permet lui aussi de sauvegarder certai
 - [move_files](https://www.computerhope.com/movehlp.htm)
 
 
-## update readme : 
-
-- 05/06/2019 
