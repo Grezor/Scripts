@@ -1,7 +1,5 @@
 #!/bin/bash
 
-
-
 # Creation du nom de l'archive
 create_archive_filename(){
     day=$(date+ %A)
